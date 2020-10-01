@@ -9,6 +9,7 @@ class Division{
       World.add(world, this.body);
     }
     display(){
+      console.log("displayDivision")
       var pos =this.body.position;
       rectMode(CENTER);
       fill("brown");
