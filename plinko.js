@@ -7,7 +7,7 @@ class Plinko{
             //'density' :1.2
        }
        this.body = Bodies.circle(x, y, radius, plinko_options);
-       this.radius = this.radius;
+       this.radius = radius;
       
        
        World.add(world, this.body);

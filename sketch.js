@@ -16,7 +16,7 @@ function setup() {
     world = engine.world;
 
   for(var k=0;k<=width;k=k+80){
-    divisions.push(new Division(k,height-divisionHeight/2),10,divisionHeight)
+    divisions.push(new Division(k,height-divisionHeight/2,10,divisionHeight))
   }
   for(var j=40;j<=width;j=j+50){
     plinkos.push(new Plinko(j,75,10))
@@ -31,10 +31,12 @@ function draw() {
 
   background(255,255,255);  
   drawSprites();
+  Engine.update(engine)
  
   for(var k=0;k<divisions.length;k++){
     divisions[k].display();
   }
+ //s for (var k = 0; k < divisions.length; k++) { divisions[k].display(); }
   for(var t=0;t<plinkos.length;t++){
     plinkos[t].display();
   }

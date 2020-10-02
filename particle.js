@@ -7,7 +7,7 @@ class Particle{
             'density' :1.2
        }
        this.body = Bodies.circle(x, y, radius, particle_options);
-       this.radius = this.radius;
+       this.radius = radius;
       this.color=color(random(0,255),random(0,255),random(0,255))
        
        World.add(world, this.body);
