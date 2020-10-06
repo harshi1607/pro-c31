@@ -28,7 +28,7 @@ function setup() {
 }
 
 function draw() {
-
+console.log(frameCount)
   background(255,255,255);  
   drawSprites();
   Engine.update(engine)
@@ -36,7 +36,7 @@ function draw() {
   for(var k=0;k<divisions.length;k++){
     divisions[k].display();
   }
- //s for (var k = 0; k < divisions.length; k++) { divisions[k].display(); }
+ // for (var k = 0; k < divisions.length; k++) { divisions[k].display(); }
   for(var t=0;t<plinkos.length;t++){
     plinkos[t].display();
   }
@@ -44,6 +44,7 @@ function draw() {
   if(frameCount%60===0){
     particles.push(new Particle(random(width/2-10,width/2+10),10,10))
   }
+
   for(var k=0;k<particles.length;k++){
     particles[k].display();
   }

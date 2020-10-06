@@ -18,7 +18,7 @@ class Particle{
        push()
        translate(pos.x,pos.y)
        noStroke();
-       fill("this.color");
+       fill(this.color);
        ellipseMode(RADIUS);
        ellipse(0,0,this.radius,this.radius)
        pop();
